@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="initial-scale=1, user-scalable=no, maximum-scale=1, width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css">
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <title>Карта ТОР</title>
+    </head>
+    <body>
+
+        <div class="bg-light">
+            <div class="container d-flex p-2">
+            <div class="col-10 d-flex">
+            <div>
+              <a class="text-dark" href="tel:8(4112)50-62-95">8(4112)50-62-95</a>
+            </div>
+            <div class="ml-3">
+              <a class="text-dark" href="mailto:info@corp-sakha.ru">info@corp-sakha.ru</a>
+            </div>
+            </div>
+            <div class="col-2 d-flex">
+            <div class="col-4">
+              <a href="https://www.facebook.com/korporatzia">
+                <img class="w-100" src="facebook-logo.png">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="https://www.instagram.com/korporatzia/">
+                <img class="w-100" src="instagram-logo.png">
+              </a>
+            </div>
+            <div class="col-4">
+              <a href="https://vk.com/public94459750">
+                <img class="w-100" src="vk-logo.png">
+              </a>
+            </div>
+            </div>
+            </div>
+            <div class="shadow-lg p-2 bg-white">
+            <div class="container d-flex">
+            <div class="pt-2">
+            <a href="http://krrsy.ru"><img class="w-75" src="logo.png"></a>
+            </div>
+            <div class="d-flex pt-2">
+            <div class="dropdown">
+              <a class="text-dark" href="http://krrsy.ru/o-korporacii-2/">О корпорации</a>
+              <div class="dropdown-content">
+                <a class="text-dark" href="http://krrsy.ru/o-korporacii-2/o-korporacii/">О нас</a>
+                <div class="dropdown-divider"></div>
+                <a class="text-dark" href="http://krrsy.ru/o-korporacii-2/rukovodstvo/">Совет директоров</a>
+                <div class="dropdown-divider"></div>
+                <a class="text-dark" href="http://krrsy.ru/o-korporacii-2/raskrytie-informacii/">Раскрытие информации</a>
+              </div>
+            </div>
+            <div class="pl-4">
+              <a class="text-dark" href="http://krrsy.ru/korporativnyy-blog-na-medium/">Корпоративный блог</a>
+            </div>
+            <div class="dropdown pl-4">
+              <a class="text-dark" href="http://krrsy.ru/proekty/">Проекты</a>
+              <div class="dropdown-content">
+                <a class="text-dark" href="http://krrsy.ru/portfolio-types/proekty/">Инвестиционные проекты</a>
+                <div class="dropdown-divider"></div>
+                <a class="text-dark" href="http://krrsy.ru/portfolio-types/proekty-razvitiya/">Проекты развития</a>
+                <div class="dropdown-divider"></div>
+                <a class="text-dark" href="http://krrsy.ru/predlozhit-svoy-proekt/">Предложить свой проект</a>
+              </div>
+            </div>
+            <div class="dropdown pl-4">
+              <a class="text-dark" href="http://krrsy.ru/tor/">ТОР</a>
+              <div class="dropdown-content">
+                <a class="text-dark" href="file:///C:/Users/alber/Desktop/-/hackathon/qgis2web_2020_03_18-17_03_48_377792/index.html#12/61.7706/129.7887">Карта ТОР</a>
+                <div class="dropdown-divider"></div>
+                <a class="text-dark" href="file:///C:/Users/alber/Desktop/-/hackathon/qgis2web_2020_03_18-17_03_48_377792/index1.html">Калькулятор льгот ТОР</a>
+                <div class="dropdown-divider"></div>
+                <a class="text-dark" href="http://krrsy.ru/tor/navigator-podderzhki-predprinimatele/">Навигатор поддержки предпринимателей</a>
+                <div class="dropdown-divider"></div>
+                <div class="dropdown1">
+                  <a class="text-dark" href="http://krrsy.ru/tor/kak-stat-rezidentom/">Как стать резидентом</a>
+                  <div class="dropdown-content1">
+                    <a class="text-dark" href="http://krrsy.ru/tor/lgoty-dlya-rezidentov/">Приференции ТОР</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="text-dark" href="http://krrsy.ru/tor-yakutia/">ТОР <<Якутия>></a>
+                    <div class="dropdown-divider"></div>
+                    <a class="text-dark" href="http://krrsy.ru/tor/tor-yakutia/">ТОР <<Южная Якутия>></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown pl-4">
+              <a class="text-dark" href="http://krrsy.ru/karera-v-korporacii/">Карьера</a>
+              <div class="dropdown-content">
+                <a class="text-dark" href="http://krrsy.ru/nashi-cennosti/">Наши ценности</a>
+                <div class="dropdown-divider"></div>
+                <a class="text-dark" href="http://krrsy.ru/karera-v-korporacii/stazhirovki/">Программа стажировок Game Changers</a>
+              </div>
+            </div>
+            <div class="pl-4">
+              <a class="text-dark" href="http://krrsy.ru/kontakty/">Контакты</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="container p-4">
+            <div class="col-4 mx-auto pt-4">
+              <h1 class="title pl-5">Карта ТОР</h1>
+              <div class="d-flex">
+            <div class="d-flex p-2">
+              <a class="text-dark" href="http://krrsy.ru">Главная</a>
+              <p class="pl-4">></p>
+            </div>
+            <div class="d-flex p-2">
+              <a class="text-dark" href="http://krrsy.ru/tor/">ТОР</a>
+              <p class="pl-4">></p>
+            </div>
+            <p class="p-2">Карта ТОР</p>
+            </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="bg-light pb-5">
+            <div class="container p-4 mx-auto">
+                <div class="d-flex">
+                    <div class="col-2"></div>
+                    <div class="col-7 pl-5 mr-5" id="map"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white pt-3">
+            <div class="d-flex container p-2">
+            <div class="col-4">
+            <h3 class="pt-3 pb-3">ПОЛЕЗНЫЕ ССЫЛКИ</h3>
+            <div>
+            <div>
+              <a class="text-muted" href="/tosyer/kak-stat-rezidentom/">Как стать резидентом ТОР</a>
+            </div>
+            <div>
+              <a class="text-muted" href="/predlozhit-svoy-proekt/">Предложить свой проект</a>
+            </div>
+            <div>
+              <a class="text-muted" href="http://krrsy.ru/wp-content/uploads/2020/03/Informaciya dlya potencilnykh rezidentov.pdf">Все о ТОР</a>
+            </div>
+            </div>
+            </div>
+            <div class="col-4">
+            <h3 class="pt-3 pb-3">КОНТАКТЫ</h3>
+            <div>
+            <p>677000,г.Якутск, Орджоникидзе, 36/1</p>
+            <p>8(4112)50-62-90</p>
+            <a class="text-muted" href="mailto:info@krrsy.ru">info@krrsy.ru</a>
+            </div>
+            </div>
+            <div class="col-4">
+            <h3 class="pt-3 pb-3">ПАРТНЕРЫ</h3>
+            <div>
+            <div>
+              <a class="text-muted" href="https://mininnovation.sakha.gov.ru/">Мининноваций РС (Я)</a>
+            </div>
+            <div>
+              <a class="text-muted" href="https://minimush.sakha.gov.ru/">МИЗО РС (Я)</a>
+            </div>
+            <div>
+              <a class="text-muted" href="https://mineconomic.sakha.gov.ru/">Минэк РС (Я)</a>
+            </div>
+            <div>
+              <a class="text-muted" href="http://src-sakha.ru/">ЦСИ при Главе РС (Я)</a>
+            </div>
+            <div>
+              <a class="text-muted" href="https://vshim.ru/">ВШИМ при Главе РС (Я)</a>
+            </div>
+            <div>
+              <a class="text-muted" href="https://www.s-vfu.ru/">СВФУ</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="d-flex container">
+            <div class="">
+            <p>Хостинг и разработка сайта -<a class="text-dark" href="http://smartunit.pro/"> Smart Unit</a></p>
+            </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="data/qgz_1.js"></script>
+        <script src="data/_2.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[61.73353154744694,129.6960021842084],[61.80770853800656,129.88149319297503]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        var layer_OpenStreetMapde_0 = L.tileLayer('http://a.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+            opacity: 1.0,
+            attribution: '<a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors, under ODbL</a>',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 18
+        });
+        layer_OpenStreetMapde_0;
+        map.addLayer(layer_OpenStreetMapde_0);
+        function pop_qgz_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>площадь</strong><br />' + (feature.properties['площадь'] !== null ? Autolinker.link(feature.properties['площадь'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">К.номер</th>\
+                        <td>' + (feature.properties['К.номер'] !== null ? Autolinker.link(feature.properties['К.номер'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_qgz_1_0() {
+            return {
+                pane: 'pane_qgz_1',
+                opacity: 1,
+                color: 'rgba(228,26,28,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_qgz_1');
+        map.getPane('pane_qgz_1').style.zIndex = 401;
+        map.getPane('pane_qgz_1').style['mix-blend-mode'] = 'normal';
+        var layer_qgz_1 = new L.geoJson(json_qgz_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_qgz_1',
+            layerName: 'layer_qgz_1',
+            pane: 'pane_qgz_1',
+            onEachFeature: pop_qgz_1,
+            style: style_qgz_1_0,
+        });
+        bounds_group.addLayer(layer_qgz_1);
+        map.addLayer(layer_qgz_1);
+        function pop__2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>id</strong><br />' + (feature.properties['id'] !== null ? Autolinker.link(feature.properties['id'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style__2_0() {
+            return {
+                pane: 'pane__2',
+                opacity: 1,
+                color: 'rgba(228,26,28,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane__2');
+        map.getPane('pane__2').style.zIndex = 402;
+        map.getPane('pane__2').style['mix-blend-mode'] = 'normal';
+        var layer__2 = new L.geoJson(json__2, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json__2',
+            layerName: 'layer__2',
+            pane: 'pane__2',
+            onEachFeature: pop__2,
+            style: style__2_0,
+        });
+        bounds_group.addLayer(layer__2);
+        map.addLayer(layer__2);
+        setBounds();
+        </script>
+    </body>
+</html>
